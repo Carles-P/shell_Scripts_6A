@@ -6,4 +6,4 @@ elif [[ $litros -gt 50 && $litros -le 200 ]]; then
 elif [ $litros -gt 200 ]; then
     coste=$(expr 20+$(expr 150*0.2)+$(expr $((litros-200))*0.1) | bc)
 fi
-echo "$coste"
+echo "Coste: $coste"
