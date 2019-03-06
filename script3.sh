@@ -1,4 +1,4 @@
-read -p "Introduce valor mayor que nota: " variable1
+read -p "Introduce nota: " variable1
 while [[ `echo "$variable1<0" | bc` = 1 || `echo "$variable1>10" | bc` = 1 ]]; do
     read -p "Nota no válida. Introduce valor entre 0 y 10: " variable1
 done
